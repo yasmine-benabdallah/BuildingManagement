@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Building Management</h1>
+  <div id="app">
+    <!-- Building Section -->
+    <section id="buildings">  
+      <h2>Buildings</h2>
+      <form id="buildingForm">
+        <input type="text" id="address" placeholder="Building Address" required>
+        <input type="number" id="floors" placeholder="Number of Floors" required>
+        <button type="submit">Add Building</button>
+      </form>
+      <ul id="buildingList"></ul>
+    </section>
+
+    <!-- Apartment Section -->
+    <section id="apartments">
+      <h2>Apartments</h2>
+      <form id="apartmentForm">
+        <input type="text" id="owner" placeholder="Apartment Owner" required>
+        <input type="number" id="buildingId" placeholder="Building ID" required>
+        <button type="submit">Add Apartment</button>
+      </form>
+      <ul id="apartmentList"></ul>
+    </section>
+
+    <!-- Syndic Section -->
+    <section id="syndics">
+      <h2>Syndic</h2>
+      <form id="syndicForm">
+        <input type="number" id="syndicPrice" placeholder="Syndic Price" required>
+        <select id="paid">
+          <option value="true">Paid</option>
+          <option value="false">Unpaid</option>
+        </select>
+        <input type="number" id="apartmentId" placeholder="Apartment ID" required>
+        <button type="submit">Add Syndic</button>
+      </form>
+      <ul id="syndicList"></ul>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
